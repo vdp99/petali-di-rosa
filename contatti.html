@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contatti — Petali di Rosa, Atelier Floreale ad Alba</title>
+  <meta name="description" content="Contatta Petali di Rosa per richiedere un preventivo per il tuo matrimonio. Rodica: +39 320 024 7444. Rossella: +39 339 712 1942. Alba, Cuneo, Piemonte.">
+  <link rel="canonical" href="https://www.petalidirosa.it/contatti.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.petalidirosa.it/contatti.html">
+  <meta property="og:title" content="Contatti — Petali di Rosa, Atelier Floreale ad Alba">
+  <meta property="og:description" content="Contatta Petali di Rosa per richiedere un preventivo per il tuo matrimonio. Rodica: +39 320 024 7444. Rossella: +39 339 712 1942. Alba, Cuneo, Piemonte.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1550159930-40066082a4fc?w=1200&q=80">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav" role="navigation" aria-label="Navigazione principale">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo" aria-label="Petali di Rosa - Home">
+        <span class="nav__logo-name">Petali di Rosa</span>
+        <span class="nav__logo-sub">Atelier Floreale</span>
+      </a>
+      <ul class="nav__links" role="list">
+        <li><a href="index.html" class="nav__link">Home</a></li>
+        <li><a href="chi-siamo.html" class="nav__link">Chi Siamo</a></li>
+        <li><a href="servizi.html" class="nav__link">Servizi</a></li>
+        <li><a href="metodo.html" class="nav__link">Il Metodo</a></li>
+        <li><a href="blog/index.html" class="nav__link">Blog</a></li>
+        <li><a href="faq.html" class="nav__link">FAQ</a></li>
+        <li><a href="contatti.html" class="nav__link nav__link--cta">Contattaci</a></li>
+      </ul>
+      <button class="nav__hamburger" aria-label="Apri menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <div class="nav__overlay"></div>
+  <nav class="nav__mobile" aria-label="Menu mobile">
+    <a href="index.html" class="nav__mobile-link">Home</a>
+    <a href="chi-siamo.html" class="nav__mobile-link">Chi Siamo</a>
+    <a href="servizi.html" class="nav__mobile-link">Servizi</a>
+    <a href="metodo.html" class="nav__mobile-link">Il Metodo</a>
+    <a href="blog/index.html" class="nav__mobile-link">Blog</a>
+    <a href="faq.html" class="nav__mobile-link">FAQ</a>
+    <a href="contatti.html" class="nav__mobile-link nav__mobile-link--cta btn btn--primary">Contattaci</a>
+  </nav>
+
+  <main>
+
+    <!-- Hero (small) -->
+    <section class="hero hero--small" aria-label="Intestazione pagina contatti">
+      <div class="hero__bg">
+        <img
+          src="https://images.unsplash.com/photo-1550159930-40066082a4fc?w=1200&q=80"
+          alt="Composizione floreale elegante per ricevimento nuziale — Petali di Rosa, Alba"
+          class="hero__img"
+          loading="eager"
+          fetchpriority="high"
+        >
+      </div>
+      <div class="hero__overlay"></div>
+      <div class="container hero__content">
+        <p class="hero__eyebrow reveal">Parliamo insieme</p>
+        <h1 class="hero__title reveal reveal--delay-1">Contattaci</h1>
+      </div>
+    </section>
+
+    <!-- Breadcrumb -->
+    <nav class="breadcrumb" aria-label="Percorso di navigazione">
+      <div class="container">
+        <ol class="breadcrumb__list" role="list">
+          <li class="breadcrumb__item"><a href="index.html" class="breadcrumb__link">Home</a></li>
+          <li class="breadcrumb__item breadcrumb__item--current" aria-current="page">Contatti</li>
+        </ol>
+      </div>
+    </nav>
+
+    <!-- Contact Section -->
+    <section class="section" aria-labelledby="contatti-title">
+      <div class="container">
+        <div class="grid grid-2" style="gap:5rem; align-items:start;">
+
+          <!-- LEFT: Form -->
+          <div class="reveal">
+            <p class="section__eyebrow">Scrivici</p>
+            <h2 class="section__title" id="contatti-title">Raccontateci il vostro sogno</h2>
+            <p style="color:var(--accent2); line-height:1.8; margin-bottom:2.5rem;">Compilate il modulo e vi risponderemo entro 48 ore. Il primo incontro è sempre gratuito e senza impegno.</p>
+
+            <form class="contact-form" id="contact-form" method="post" novalidate aria-label="Modulo di contatto">
+
+              <div class="form-group">
+                <label class="form-label" for="nome">
+                  Nome e cognome <span class="form-required" aria-label="campo obbligatorio">*</span>
+                </label>
+                <input
+                  type="text"
+                  id="nome"
+                  name="nome"
+                  class="form-input"
+                  placeholder="Es. Maria Rossi"
+                  required
+                  autocomplete="name"
+                  aria-required="true"
+                  aria-describedby="nome-error"
+                >
+                <span class="form-error" id="nome-error" role="alert" aria-live="polite"></span>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="email">
+                  Indirizzo email <span class="form-required" aria-label="campo obbligatorio">*</span>
+                </label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  class="form-input"
+                  placeholder="Es. maria@esempio.it"
+                  required
+                  autocomplete="email"
+                  aria-required="true"
+                  aria-describedby="email-error"
+                >
+                <span class="form-error" id="email-error" role="alert" aria-live="polite"></span>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="telefono">
+                  Numero di telefono <span class="form-optional">(opzionale)</span>
+                </label>
+                <input
+                  type="tel"
+                  id="telefono"
+                  name="telefono"
+                  class="form-input"
+                  placeholder="Es. +39 333 000 0000"
+                  autocomplete="tel"
+                  aria-describedby="telefono-hint"
+                >
+                <span class="form-hint" id="telefono-hint">Utile per contattarvi più rapidamente</span>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="data">
+                  Data del matrimonio <span class="form-optional">(opzionale)</span>
+                </label>
+                <input
+                  type="date"
+                  id="data"
+                  name="data"
+                  class="form-input"
+                  aria-describedby="data-hint"
+                  min="2025-01-01"
+                >
+                <span class="form-hint" id="data-hint">Se non avete ancora una data definita, lasciate vuoto</span>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="location">
+                  Location prevista <span class="form-optional">(opzionale)</span>
+                </label>
+                <input
+                  type="text"
+                  id="location"
+                  name="location"
+                  class="form-input"
+                  placeholder="Es. Villa Beccaris, Monforte d'Alba"
+                  aria-describedby="location-hint"
+                >
+                <span class="form-hint" id="location-hint">Nome e/o comune della location, anche indicativa</span>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="messaggio">
+                  Come immaginate il vostro matrimonio? <span class="form-required" aria-label="campo obbligatorio">*</span>
+                </label>
+                <textarea
+                  id="messaggio"
+                  name="messaggio"
+                  class="form-input form-textarea"
+                  placeholder="Raccontateci il vostro stile, l'atmosfera che sognate, i colori preferiti, la location... più ci dite, meglio possiamo aiutarvi."
+                  required
+                  rows="6"
+                  aria-required="true"
+                  aria-describedby="messaggio-error messaggio-hint"
+                ></textarea>
+                <span class="form-hint" id="messaggio-hint">Non c'è una risposta sbagliata: scriveteci come vi viene naturale</span>
+                <span class="form-error" id="messaggio-error" role="alert" aria-live="polite"></span>
+              </div>
+
+              <div class="form-group form-group--checkbox">
+                <label class="form-checkbox-label" for="privacy">
+                  <input
+                    type="checkbox"
+                    id="privacy"
+                    name="privacy"
+                    class="form-checkbox"
+                    required
+                    aria-required="true"
+                    aria-describedby="privacy-error"
+                  >
+                  <span class="form-checkbox-text">
+                    Ho letto e accetto la <a href="privacy.html" target="_blank" rel="noopener">Privacy Policy</a>. Acconsento al trattamento dei miei dati personali per ricevere risposta alla mia richiesta. <span class="form-required" aria-label="campo obbligatorio">*</span>
+                  </span>
+                </label>
+                <span class="form-error" id="privacy-error" role="alert" aria-live="polite"></span>
+              </div>
+
+              <div class="form-group">
+                <button type="submit" class="btn btn--primary btn--lg btn--full" id="submit-btn">
+                  <span class="btn-text">Invia la tua richiesta</span>
+                  <span class="btn-loading" aria-hidden="true" hidden>
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="spin"><path d="M21 12a9 9 0 11-6.219-8.56"/></svg>
+                    Invio in corso...
+                  </span>
+                </button>
+              </div>
+
+              <div class="form-success" id="form-success" role="status" aria-live="polite" hidden>
+                <div class="form-success__icon" aria-hidden="true">
+                  <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20,6 9,17 4,12"/></svg>
+                </div>
+                <h3 class="form-success__title">Messaggio inviato con successo!</h3>
+                <p class="form-success__text">Grazie per averci scritto. Vi risponderemo entro 48 ore per fissare il vostro primo incontro conoscitivo gratuito. Nel frattempo, potete seguirci su <a href="https://www.instagram.com/petalidirosa_wedding" target="_blank" rel="noopener">Instagram</a> per ispirazioni e aggiornamenti.</p>
+              </div>
+
+            </form>
+          </div>
+
+          <!-- RIGHT: Info -->
+          <div class="reveal reveal--delay-1">
+            <p class="section__eyebrow">Dove siamo</p>
+            <h2 class="section__title" style="font-size:2rem;">Veniamo a trovarvi, o venite da noi</h2>
+            <p style="color:var(--accent2); line-height:1.8; margin-bottom:2.5rem;">Il nostro atelier si trova ad Alba, nel cuore delle Langhe piemontesi. Siamo raggiungibili per appuntamento, in persona o in videochiamata.</p>
+
+            <div class="contact-info">
+
+              <div class="contact-info__item">
+                <div class="contact-info__icon" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                </div>
+                <div class="contact-info__body">
+                  <span class="contact-info__label">Indirizzo</span>
+                  <span class="contact-info__value">Corso Cortemilia 153/A<br>Alba (CN) — Piemonte</span>
+                </div>
+              </div>
+
+              <div class="contact-info__item">
+                <div class="contact-info__icon" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.8a19.79 19.79 0 01-3.07-8.7A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+                </div>
+                <div class="contact-info__body">
+                  <span class="contact-info__label">Rodica — Titolare</span>
+                  <a href="tel:+393200247444" class="contact-info__value contact-info__link">+39 320 024 7444</a>
+                </div>
+              </div>
+
+              <div class="contact-info__item">
+                <div class="contact-info__icon" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.8a19.79 19.79 0 01-3.07-8.7A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+                </div>
+                <div class="contact-info__body">
+                  <span class="contact-info__label">Rossella — Organizzazione</span>
+                  <a href="tel:+393397121942" class="contact-info__value contact-info__link">+39 339 712 1942</a>
+                </div>
+              </div>
+
+              <div class="contact-info__item">
+                <div class="contact-info__icon" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                </div>
+                <div class="contact-info__body">
+                  <span class="contact-info__label">Instagram</span>
+                  <a href="https://www.instagram.com/petalidirosa_wedding" target="_blank" rel="noopener" class="contact-info__value contact-info__link">@petalidirosa_wedding</a>
+                </div>
+              </div>
+
+              <div class="contact-info__item">
+                <div class="contact-info__icon" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12,6 12,12 16,14"/></svg>
+                </div>
+                <div class="contact-info__body">
+                  <span class="contact-info__label">Orari</span>
+                  <span class="contact-info__value">Su appuntamento<br><span style="font-size:0.85rem; opacity:0.75;">Lun–Sab, orari flessibili</span></span>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Highlight Box -->
+            <div class="highlight-box" style="margin-top:2.5rem; padding:2rem 2rem 2rem 2rem;">
+              <div style="display:flex; gap:1rem; align-items:flex-start;">
+                <div style="flex-shrink:0; margin-top:0.1rem;" aria-hidden="true">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--accent1)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+                </div>
+                <div>
+                  <p style="font-family:'Cormorant Garamond', serif; font-size:1.15rem; font-weight:600; color:var(--primary); margin-bottom:0.5rem; line-height:1.4;">Il primo incontro è sempre gratuito e senza impegno.</p>
+                  <p style="color:var(--accent2); line-height:1.8; font-size:0.95rem;">Ci raccontate chi siete e come immaginate il vostro giorno. Noi ascoltiamo, facciamo domande, prendiamo appunti. Da quella conversazione nasce tutto il resto. Non siete obbligati a nulla: se poi decidete di non procedere con noi, va bene lo stesso.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Secondary actions -->
+            <div style="margin-top:2rem; display:flex; gap:1rem; flex-wrap:wrap;">
+              <a href="faq.html" class="btn btn--secondary">Leggi le FAQ</a>
+              <a href="metodo.html" class="btn btn--secondary">Scopri il metodo</a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Additional Trust Section -->
+    <section class="section section--light" aria-label="Perché sceglierci">
+      <div class="container">
+        <div class="text-center reveal" style="margin-bottom:3rem;">
+          <p class="section__eyebrow">Prima di scrivere</p>
+          <h2 class="section__title">Cosa aspettarsi dopo il vostro messaggio</h2>
+        </div>
+        <div class="grid grid-3">
+          <div class="reveal text-center" style="padding:2rem;">
+            <div style="width:60px; height:60px; border-radius:50%; background:var(--rose); display:flex; align-items:center; justify-content:center; margin:0 auto 1.5rem;" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <h3 style="font-family:'Cormorant Garamond', serif; font-size:1.3rem; font-weight:600; color:var(--primary); margin-bottom:0.75rem;">1. Risposta entro 48h</h3>
+            <p style="color:var(--accent2); line-height:1.8; font-size:0.95rem;">Leggiamo ogni messaggio con attenzione e vi rispondiamo entro due giorni lavorativi per fissare il primo incontro.</p>
+          </div>
+          <div class="reveal reveal--delay-1 text-center" style="padding:2rem;">
+            <div style="width:60px; height:60px; border-radius:50%; background:var(--rose); display:flex; align-items:center; justify-content:center; margin:0 auto 1.5rem;" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+            </div>
+            <h3 style="font-family:'Cormorant Garamond', serif; font-size:1.3rem; font-weight:600; color:var(--primary); margin-bottom:0.75rem;">2. Primo incontro gratuito</h3>
+            <p style="color:var(--accent2); line-height:1.8; font-size:0.95rem;">Ci conosciamo, vi ascoltiamo, parliamo del vostro sogno. In atelier ad Alba o in videochiamata. Nessun impegno.</p>
+          </div>
+          <div class="reveal reveal--delay-2 text-center" style="padding:2rem;">
+            <div style="width:60px; height:60px; border-radius:50%; background:var(--rose); display:flex; align-items:center; justify-content:center; margin:0 auto 1.5rem;" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14,2 14,8 20,8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+            </div>
+            <h3 style="font-family:'Cormorant Garamond', serif; font-size:1.3rem; font-weight:600; color:var(--primary); margin-bottom:0.75rem;">3. Preventivo su misura</h3>
+            <p style="color:var(--accent2); line-height:1.8; font-size:0.95rem;">Dopo il sopralluogo e la co-progettazione, ricevete un preventivo dettagliato e trasparente, senza sorprese.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <span class="footer__logo-name">Petali di Rosa</span>
+          <span class="footer__logo-sub">Atelier Floreale</span>
+          <p class="footer__tagline">Creiamo scenografie floreali su misura per il giorno più bello della tua vita. Con cura artigianale e presenza totale.</p>
+          <a href="https://www.instagram.com/petalidirosa_wedding" class="footer__social" target="_blank" rel="noopener">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            @petalidirosa_wedding
+          </a>
+        </div>
+        <div>
+          <p class="footer__col-title">Navigazione</p>
+          <ul class="footer__links">
+            <li><a href="index.html" class="footer__link">Home</a></li>
+            <li><a href="chi-siamo.html" class="footer__link">Chi Siamo</a></li>
+            <li><a href="servizi.html" class="footer__link">Servizi</a></li>
+            <li><a href="metodo.html" class="footer__link">Il Metodo</a></li>
+            <li><a href="blog/index.html" class="footer__link">Blog</a></li>
+            <li><a href="faq.html" class="footer__link">FAQ</a></li>
+            <li><a href="contatti.html" class="footer__link">Contatti</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer__col-title">Contatti</p>
+          <div class="footer__contact-item">
+            <span class="footer__contact-label">Rodica — Titolare</span>
+            <span class="footer__contact-value"><a href="tel:+393200247444">+39 320 024 7444</a></span>
+          </div>
+          <div class="footer__contact-item">
+            <span class="footer__contact-label">Rossella — Organizzazione</span>
+            <span class="footer__contact-value"><a href="tel:+393397121942">+39 339 712 1942</a></span>
+          </div>
+          <div class="footer__contact-item">
+            <span class="footer__contact-label">Sede</span>
+            <span class="footer__contact-value">Corso Cortemilia 153/A, Alba (CN)</span>
+          </div>
+        </div>
+        <div>
+          <p class="footer__col-title">Seguici su Instagram</p>
+          <p style="font-size:0.85rem;color:rgba(255,255,255,0.6);line-height:1.7;margin-bottom:1rem;">Ispirazioni, dietro le quinte e dettagli dei matrimoni che curiamo ogni giorno.</p>
+          <a href="https://www.instagram.com/petalidirosa_wedding" class="btn btn--outline" target="_blank" rel="noopener" style="font-size:0.75rem;border-color:rgba(255,255,255,0.3);color:rgba(255,255,255,0.7);">Vai su Instagram</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copyright">© 2025 Petali di Rosa di Rodica Mucuta — Corso Cortemilia 153/A, Alba (CN)</p>
+        <div class="footer__legal">
+          <a href="privacy.html" class="footer__legal-link">Privacy Policy</a>
+          <a href="privacy.html#cookie" class="footer__legal-link">Cookie Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Cookie Banner -->
+  <div class="cookie-banner" id="cookie-banner" role="region" aria-label="Consenso cookie">
+    <div class="cookie-banner__inner">
+      <p class="cookie-banner__text">Utilizziamo cookie tecnici necessari al funzionamento del sito e, previo tuo consenso, cookie analitici per migliorare la tua esperienza. Consulta la nostra <a href="privacy.html#cookie">Cookie Policy</a>.</p>
+      <div class="cookie-banner__actions">
+        <button class="cookie-btn cookie-btn--accept">Accetta tutti</button>
+        <button class="cookie-btn cookie-btn--necessary">Solo necessari</button>
+        <button class="cookie-btn cookie-btn--manage">Gestisci preferenze</button>
+      </div>
+    </div>
+  </div>
+  <div class="cookie-modal" id="cookie-modal" role="dialog" aria-modal="true" aria-labelledby="cookie-modal-title">
+    <div class="cookie-modal__overlay"></div>
+    <div class="cookie-modal__panel">
+      <h2 class="cookie-modal__title" id="cookie-modal-title">Gestisci preferenze cookie</h2>
+      <p class="cookie-modal__desc">Scegli quali categorie di cookie consentire. I cookie tecnici sono sempre attivi.</p>
+      <div class="cookie-toggle">
+        <div class="cookie-toggle__info"><span class="cookie-toggle__name">Cookie necessari</span><span class="cookie-toggle__desc">Essenziali per il funzionamento del sito.</span></div>
+        <label class="toggle-switch"><input type="checkbox" checked disabled><span class="toggle-switch__slider"></span></label>
+      </div>
+      <div class="cookie-toggle">
+        <div class="cookie-toggle__info"><span class="cookie-toggle__name">Cookie analitici</span><span class="cookie-toggle__desc">Ci aiutano a capire come usi il sito, in forma anonima.</span></div>
+        <label class="toggle-switch"><input type="checkbox" id="cookie-analytics"><span class="toggle-switch__slider"></span></label>
+      </div>
+      <div class="cookie-toggle">
+        <div class="cookie-toggle__info"><span class="cookie-toggle__name">Cookie marketing</span><span class="cookie-toggle__desc">Per mostrare pubblicità pertinente su altri siti.</span></div>
+        <label class="toggle-switch"><input type="checkbox" id="cookie-marketing"><span class="toggle-switch__slider"></span></label>
+      </div>
+      <div class="cookie-modal__actions">
+        <button class="cookie-btn cookie-btn--save btn btn--primary">Salva preferenze</button>
+        <button class="cookie-btn cookie-btn--accept-all btn btn--outline">Accetta tutti</button>
+      </div>
+    </div>
+  </div>
+  <script src="main.js"></script>
+
+</body>
+</html>
